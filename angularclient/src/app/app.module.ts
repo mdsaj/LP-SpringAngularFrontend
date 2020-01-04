@@ -9,7 +9,8 @@ import { UserListComponent } from './user-list/user-list.component';
 import { UserFormComponent } from './user-form/user-form.component';
 import { UserService } from './service/user-service.service';
 import { LoginComponent } from './login/login.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     UserListComponent,
     UserFormComponent,
     LoginComponent,
-    DashboardComponent
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

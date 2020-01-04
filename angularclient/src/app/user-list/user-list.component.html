@@ -1,28 +1,25 @@
-<ul class="text-center list-inline py-3">
-   <li class="list-inline-item">
-      <a routerLink="/adduser" class="btn btn-info">Add User</a>
-   </li>
-</ul>
-<div class="card my-5">
-  <div class="card-body">
-    <table class="table table-bordered table-striped">
-      <thead class="thead-dark">
-        <tr>
-          <th scope="col">#</th>
-          <th scope="col">Name</th>
-          <th scope="col">Email</th>
-          <th scope="col" colspan="2">Action</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr *ngFor="let user of users">
-          <td>{{ user.id }}</td>
-          <td>{{ user.name }}</td>
-          <td><a href="mailto:{{ user.email }}">{{ user.email }}</a></td>
-          <td><button type="button" class="btn btn-primary" (click)="updateUser(user.id)">Update</button></td>
-          <td><button type="button" class="btn btn-danger" (click)="deleteUser(user.id)">Delete</button></td>
-        </tr>
-      </tbody>
-    </table>
+<div style="margin-top: 50px;" class="container">
+  <div class="card my-5">
+    <div class="card-body">
+      <table class="table table-bordered table-striped">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col" colspan="2">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let user of users">
+            <td>{{ user.id }}</td>
+            <td>{{ user.name }}</td>
+            <td><a href="mailto:{{ user.email }}">{{ user.email }}</a></td>
+            <td><button type="button" class="btn btn-primary" (click)="updateUser(user.id)">Update</button></td>
+            <td><button type="button" class="btn btn-danger" (click)="deleteUser(user.id)">Delete</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
 </div>

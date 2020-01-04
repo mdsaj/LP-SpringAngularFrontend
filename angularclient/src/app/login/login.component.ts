@@ -22,7 +22,7 @@ export class LoginComponent implements OnInit {
   onSubmit() {
     if (this.username === 'arsalan' && this.password === '123') {
       this.errorFlag = false;
-      this.router.navigate(['dashboard']);
+      this.router.navigate(['users']);
     }
     else {
       this.errorFlag = true;
