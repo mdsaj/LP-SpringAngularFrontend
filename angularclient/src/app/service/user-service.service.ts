@@ -12,8 +12,8 @@ export class UserService {
   private deleteUserUrl: string;
 
   constructor(private http: HttpClient) {
-    this.getUsersUrl = 'http://localhost:8080/getUsers';
-    this.addUserUrl = 'http://localhost:8080/addUser';
+    this.getUsersUrl = 'http://localhost:8080/users';
+    this.addUserUrl = 'http://localhost:8080/users';
     this.deleteUserUrl = 'http://localhost:8080/deleteUser';
   }
 
